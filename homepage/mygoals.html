@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="mygoals.css" rel="stylesheet">
+    <title>My Goals</title>
+  </head>
+  <body>
+    <!--Navbar for the homepage-->
+    <div class="row">
+      <div class="col">
+        <h1 class="homepage-text">My Homepage</h1>
+      </div>
+      <div class="col">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mygoals.html">My Goals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myprojects.html">My Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Content part of home part of homepage-->
+    <div class="row">
+      <div class="col">
+        <button id="dreamcomp" class="btn">My Dream Company</button>
+        <button id="cs50" class="btn">My Plans After CS50</button>
+        <button id="career" class="btn">Purposed Career Path</button>
+        <button id="other" class="btn">My Other Thoughts</button>
+        <button id="expected" class="btn">Expected Salary</button>
+      </div>
+
+      <div class="col">
+        <p class="answer1" id="answer1"></p>
+        <p class="answer2" id="answer2"></p>
+        <p class="answer3" id="answer3"></p>
+        <p class="answer4" id="answer4"></p>
+        <p class="answer5" id="answer5"></p>
+      </div>
+    </div>
+
+    <!--JavaScript part-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Define variables to track if the text is displayed
+        let answer1Displayed = false;
+        let answer2Displayed = false;
+        let answer3Displayed = false;
+        let answer4Displayed = false;
+        let answer5Displayed = false;
+
+        document.getElementById('dreamcomp').addEventListener('click', function() {
+          // If text is already displayed, clear it
+          if (answer1Displayed) {
+            document.getElementById('answer1').innerHTML = '';
+            answer1Displayed = false;
+          } else {
+            document.getElementById('answer1').innerHTML = 'I want to work for Google.';
+            answer1Displayed = true;
+          }
+        });
+
+        document.getElementById('cs50').addEventListener('click', function() {
+          if (answer2Displayed) {
+            document.getElementById('answer2').innerHTML = '';
+            answer2Displayed = false;
+          } else {
+            document.getElementById('answer2').innerHTML = 'After CS50x, I think I will take CS50w.';
+            answer2Displayed = true;
+          }
+        });
+
+        document.getElementById('career').addEventListener('click', function() {
+          if (answer3Displayed) {
+            document.getElementById('answer3').innerHTML = '';
+            answer3Displayed = false;
+          } else {
+            document.getElementById('answer3').innerHTML = 'My dream job is Full-stack developer.';
+            answer3Displayed = true;
+          }
+        });
+
+        document.getElementById('other').addEventListener('click', function() {
+          if (answer4Displayed) {
+            document.getElementById('answer4').innerHTML = '';
+            answer4Displayed = false;
+          } else {
+            document.getElementById('answer4').innerHTML = 'Maybe I could interest in AI or Cybersecurity if the web dev part goes not what I have expected.';
+            answer4Displayed = true;
+          }
+        });
+
+        document.getElementById('expected').addEventListener('click', function() {
+          if (answer5Displayed) {
+            document.getElementById('answer5').innerHTML = '';
+            answer5Displayed = false;
+          } else {
+            document.getElementById('answer5').innerHTML = 'My expectation of salary would be $100.000+ jobs.';
+            answer5Displayed = true;
+          }
+        });
+      });
+    </script>
+
+  </body>
+
+</html>

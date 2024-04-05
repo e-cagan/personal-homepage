@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(28, 29, 35) 0%, rgb(58, 58, 61) 100%);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.homepage-text {
+    font-size: larger;
+}
+
+.homepage-text, .nav-link {
+    color: rgb(0, 204, 255);
+}
+
+.homepage-text {
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+.col {
+    margin-right: 100px;
+}
+
+.nav-link {
+    margin-top: 25px;
+    font-size: large;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link:active {
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-text {
+    color: rgb(0, 204, 255);
+    margin-top: 70px;
+}
+
+.btn.btn-primary {
+    background: transparent;
+    border: none;
+    margin-top: 100px;
+}
+
+.btn.btn-primary img.github-logo {
+    height: auto;
+    width: auto;
+}
+
+.btn.btn-primary:active {
+    background: transparent;
+}
